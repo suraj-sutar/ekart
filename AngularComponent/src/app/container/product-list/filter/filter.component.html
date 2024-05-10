@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="row justify-content-start">
+    <div class="col-auto"><span>Filer:</span></div>
+
+    <div class="col-auto">
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="filter"
+          value="all"
+          [(ngModel)]="selectedFilterRadioButton"
+          (change)="onSelectedFilterRadioButtonChanged()"
+        />
+        <span class="form-check-label">{{ "All (" + all + ")" }}</span>
+      </div>
+    </div>
+    <div class="col-auto">
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="filter"
+          value="true"
+          [(ngModel)]="selectedFilterRadioButton"
+          (change)="onSelectedFilterRadioButtonChanged()"
+        />
+        <span class="form-check-label">{{ "In Stock (" + inStock + ")" }}</span>
+      </div>
+    </div>
+    <div class="col-auto">
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="filter"
+          value="false"
+          [(ngModel)]="selectedFilterRadioButton"
+          (change)="onSelectedFilterRadioButtonChanged()"
+        />
+        <span class="form-check-label">{{
+          "Out Of Stock (" + outOfStock + ")"
+        }}</span>
+      </div>
+    </div>
+  </div>
+</div>

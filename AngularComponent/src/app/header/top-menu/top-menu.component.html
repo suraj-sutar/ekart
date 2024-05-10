@@ -1,0 +1,18 @@
+<div class="firstnav">
+  <header class="ekart--header navbar navbar-expand navbar-light bg-light px-3">
+    <!-- Add Bootstrap navbar classes -->
+
+    <a class="navbar-brand ekart-logo" href="#">eKart</a>
+
+    <div
+      class="collapse navbar-collapse eKart--header--nav justify-content-end"
+      id="navbarNav"
+    >
+      <ul class="navbar-nav small mx-2" *ngFor="let item of topMenuItem">
+        <li class="nav-item">
+          <a class="nav-link" href="#">{{ item }}</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+</div>

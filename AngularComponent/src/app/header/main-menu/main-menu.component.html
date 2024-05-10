@@ -1,0 +1,25 @@
+<div class="secondnav lead">
+  <header class="ekart--header px-4 navbar navbar-expand navbar-light bg-light">
+    <!-- Add Bootstrap navbar classes -->
+    <div
+      class="collapse navbar-collapse eKart--header--nav justify-content-center"
+      id="navbarNav"
+    >
+      <ul class="navbar-nav" *ngFor="let menu of mainMenuItems">
+        <li class="nav-item mx-4">
+          <a class="nav-link" href="#">{{ menu }}</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- <div class="ekart--search-bar">
+      <input
+        type="text"
+        class="form-control eKart-search-box"
+        placeholder="Search"
+        aria-label="Search"
+      />
+      <div class="input-group-append"></div>
+    </div> -->
+  </header>
+</div>
